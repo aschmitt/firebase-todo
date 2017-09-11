@@ -22,13 +22,11 @@ class AddToDoViewController: UIViewController {
     @IBAction func save(_ sender: Any) {
         let key = self.refTodoItems.childByAutoId().key
         
-        //creating artist with the given values
         let toDoItem = [
             "id":key,
             "todoItem": toDoValue.text! as String
         ]
         
-        //adding the artist inside the generated unique key
         self.refTodoItems.child(key).setValue(toDoItem)
     }
     
@@ -36,24 +34,9 @@ class AddToDoViewController: UIViewController {
         super.viewDidLoad()
         
         self.refTodoItems = Database.database().reference().child("todos")
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -27,14 +27,12 @@ class ToDoTableViewController: UITableViewController {
                 
                 //iterating through all the values
                 for todo in snapshot.children.allObjects as! [DataSnapshot] {
-                    //getting values
                     let toDoArray = todo.value as? [String: Any]
                     let toDoValue = toDoArray?["todoItem"] as? String
                     
-                    //creating artist object with model and fetched values
+                    //creating object with model and fetched values
                     //let artist = ArtistModel(id: artistId as! String?, name: artistName as! String?, genre: artistGenre as! String?)
                     
-                    //appending it to list
                     if let toDoItemValue = toDoValue {
                         self.toDoItems.append(toDoItemValue)
                     }

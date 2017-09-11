@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		45F146751F65879700DFB66B /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F146741F65879700DFB66B /* AddToDoViewController.swift */; };
+		45F146791F66583A00DFB66B /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F146781F66583A00DFB66B /* ToDo.swift */; };
+		45F1467B1F66597E00DFB66B /* ToDoCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F1467A1F66597E00DFB66B /* ToDoCategory.swift */; };
 		45F533C91F643975002C5D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F533C81F643975002C5D50 /* AppDelegate.swift */; };
 		45F533CE1F643975002C5D50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F533CC1F643975002C5D50 /* Main.storyboard */; };
 		45F533D01F643975002C5D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F533CF1F643975002C5D50 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		03BEC36CFD5F92A97934D8F2 /* Pods-todolist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todolist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todolist/Pods-todolist.debug.xcconfig"; sourceTree = "<group>"; };
 		0A25C2F53C9128A4AA38D577 /* Pods_todolistTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todolistTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F146741F65879700DFB66B /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		45F146781F66583A00DFB66B /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		45F1467A1F66597E00DFB66B /* ToDoCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCategory.swift; sourceTree = "<group>"; };
 		45F533C51F643975002C5D50 /* todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F533C81F643975002C5D50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45F533CD1F643975002C5D50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +107,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		45F146761F66580600DFB66B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45F533F81F644F77002C5D50 /* ToDoTableViewController.swift */,
+				45F146741F65879700DFB66B /* AddToDoViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45F146771F66582800DFB66B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45F146781F66583A00DFB66B /* ToDo.swift */,
+				45F1467A1F66597E00DFB66B /* ToDoCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		45F533BC1F643975002C5D50 = {
 			isa = PBXGroup;
 			children = (
@@ -128,14 +150,14 @@
 		45F533C71F643975002C5D50 /* todolist */ = {
 			isa = PBXGroup;
 			children = (
+				45F146771F66582800DFB66B /* Models */,
+				45F146761F66580600DFB66B /* Views */,
 				45F533C81F643975002C5D50 /* AppDelegate.swift */,
 				45F533CC1F643975002C5D50 /* Main.storyboard */,
-				45F146741F65879700DFB66B /* AddToDoViewController.swift */,
 				45F533CF1F643975002C5D50 /* Assets.xcassets */,
 				45F533D11F643975002C5D50 /* LaunchScreen.storyboard */,
 				45F533D41F643975002C5D50 /* Info.plist */,
 				45F533F61F643A75002C5D50 /* GoogleService-Info.plist */,
-				45F533F81F644F77002C5D50 /* ToDoTableViewController.swift */,
 			);
 			path = todolist;
 			sourceTree = "<group>";
@@ -472,6 +494,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F533C91F643975002C5D50 /* AppDelegate.swift in Sources */,
+				45F146791F66583A00DFB66B /* ToDo.swift in Sources */,
+				45F1467B1F66597E00DFB66B /* ToDoCategory.swift in Sources */,
 				45F146751F65879700DFB66B /* AddToDoViewController.swift in Sources */,
 				45F533F91F644F77002C5D50 /* ToDoTableViewController.swift in Sources */,
 			);
